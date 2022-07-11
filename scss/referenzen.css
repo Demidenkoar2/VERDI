@@ -1,0 +1,29 @@
+.section__title {
+  width: 100%;
+  background-image: url(../images/referenzen/hero-back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  align-items: flex-end;
+}
+.section__title .container__title {
+  padding-bottom: 120px;
+}
+.section__title .container__title h1 {
+  color: #fff;
+}
+
+.container__title-sub {
+  background: #fff;
+}
+.container__title-sub .container__title-sub {
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+.container__title-sub .container__title-sub p {
+  max-width: 836px;
+  width: 100%;
+}/*# sourceMappingURL=referenzen.css.map */

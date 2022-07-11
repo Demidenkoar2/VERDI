@@ -1,0 +1,34 @@
+.section__title {
+    width: 100%;
+    background-image: url(../images/referenzen/hero-back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+
+    .container__title {
+        padding-bottom: 120px;
+        
+        h1 {
+            color: #fff;
+        }
+    }
+}
+
+.container__title-sub {
+    background: #fff;
+
+    .container__title-sub {
+        height: 320px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+
+        p {
+            max-width: 836px;
+            width: 100%;
+        }
+    }
+}
