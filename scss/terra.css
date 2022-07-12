@@ -1,0 +1,47 @@
+.section__title {
+  background-image: url(../images/terra/tittle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.section__title .container {
+  padding-bottom: 120px;
+  color: #fff;
+}
+.section__title .container h1 {
+  padding-bottom: 24px;
+}
+
+.section__title-sub {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.section__title-sub .container {
+  padding: 120px 15px;
+  display: flex;
+}
+.section__title-sub .container .container__span {
+  display: flex;
+  flex-direction: column;
+  max-width: 326px;
+  width: 100%;
+  margin-right: 30px;
+}
+.section__title-sub .container .container__span .link__span-title {
+  color: #000;
+  transition: color 0.3s;
+}
+.section__title-sub .container .container__span .link__span-title:hover {
+  color: #129E3D;
+}
+.section__title-sub .container .container__span .link__span-title:nth-child(2) {
+  padding-bottom: 39px;
+}
+.section__title-sub .container .container__text-title {
+  max-width: 754px;
+  width: 100%;
+}/*# sourceMappingURL=terra.css.map */

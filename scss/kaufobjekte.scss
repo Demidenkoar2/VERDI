@@ -1,6 +1,6 @@
 .section__title {
     width: 100%;
-    background-image: url(../images/referenzen/hero-back.jpg);
+    background-image: url(../images/kaufobjekte/hero-back.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,6 @@
         height: 320px;
         display: flex;
         align-items: center;
-        // justify-content: center;
 
         p {
             max-width: 836px;
@@ -40,7 +39,7 @@
 .section__baner-wrap {
 
     .container__baner-title {
-        background-image: url(../images/referenzen/terra-cover.jpg);
+        background-image: url(../images/kaufobjekte/terra-title.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -49,7 +48,6 @@
         margin-bottom: 10px;
     }
 }
-
 
 .link__baner {
     width: 100%;
@@ -72,7 +70,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(160.84deg, #252217 11.93%, #625C47 89.61%);
+        background: linear-gradient(160.84deg, #3b7a8a 11.93%, #151130 89.61%);
         opacity: 0.8;
     }
     
@@ -96,11 +94,11 @@
         // background-image: url(../images/referenzen/prima-cover.png);
 
         &:nth-child(1) {
-            background-image: url(../images/referenzen/prima-cover.png);
+            background-image: url(../images/kaufobjekte/terra-cover-1.jpg);
         }
 
         &:nth-child(2) {
-            background-image: url(../images/referenzen/terra-cover-4.jpg);
+            background-image: url(../images/kaufobjekte/terra-cover-2.jpg);
         }
 
         &:first-child {
@@ -110,21 +108,5 @@
         &:last-child {
             margin-left: 5px;
         }
-    }
-
-    .container__baner-lil-2 {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        &:nth-child(1) {
-            background-image: url(../images/referenzen/terra-cover-3.jpg);
-
-        }
-
-        &:nth-child(2) {
-            background-image: url(../images/referenzen/terra-cover-2.jpg);
-        }
-
     }
 }

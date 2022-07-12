@@ -171,7 +171,7 @@ let swiper = new Swiper(".mySwiper", arg);
 const swiperV2 = document.querySelectorAll('.mySwiper3');
 // console.log(swiperV2);
 
-if(swiperV2.length > 1) {
+if(swiperV2.length >= 1) {
     const arrowRight = document.querySelectorAll('.swiper-button-next');
     const arrowLeft = document.querySelectorAll('.swiper-button-prev');
     // console.log(arrowRight);

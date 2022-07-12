@@ -480,8 +480,63 @@
 
 //  ======== PAGE 2 ========
 
-@media (max-width: 900px) { 
+@media (max-width: 1160px) { 
+    .container__baner-positon {
+        padding-left: 0px !important;
+    }
+}
 
+@media (max-width: 768px) { 
+
+    .container__banerlil-items {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+
+        .container__baner-lil {
+            max-width: 100% !important;
+
+            &:first-child {
+                margin-right: 0px !important;
+                margin-bottom: 10px;
+            }
+    
+            &:last-child {
+                margin-left: 0px !important;
+            }
+        }
+    }
 }
 
 // ========= PAGE 2 END ========
+
+
+// ======== PAGE 3 ==========
+
+@media (max-width: 768px) { 
+    .section__title-sub {
+
+        .container{
+            flex-direction: column;
+
+            .container__span {
+                margin-right: 0;
+                margin-bottom: 30px;
+
+                .link__span-title {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .container__text-title {
+
+                .superlead {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+// ======== PAGE 3 END ==========
