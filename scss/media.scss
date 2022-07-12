@@ -43,6 +43,7 @@
 
     .container__wraper-white {
         width: 100%;
+        
     }
 
 }
@@ -173,10 +174,10 @@
         width: 100%;
     }
 
-    .h2__slider {
-        width: 100%;
-        height: 150px;
-    }
+    // .h2__slider {
+    //     width: 100%;
+    //     height: 150px;
+    // }
 
     .swiper-pagination {
         padding-right: 30px !important;
@@ -217,6 +218,7 @@
 
     .h2__slider {
         max-width: 630px;
+        height: 150px;
         width: 100%;
         left: 0 !important;
         padding: 0;
@@ -473,7 +475,13 @@
     }
 }
 
-
-
-
 //=========== FOOTER END ========
+
+
+//  ======== PAGE 2 ========
+
+@media (max-width: 900px) { 
+
+}
+
+// ========= PAGE 2 END ========

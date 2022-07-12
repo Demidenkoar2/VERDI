@@ -124,10 +124,6 @@
   .conteiner__slider {
     width: 100%;
   }
-  .h2__slider {
-    width: 100%;
-    height: 150px;
-  }
   .swiper-pagination {
     padding-right: 30px !important;
   }
@@ -161,6 +157,7 @@
   }
   .h2__slider {
     max-width: 630px;
+    height: 150px;
     width: 100%;
     left: 0 !important;
     padding: 0;
