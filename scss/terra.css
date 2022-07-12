@@ -21,7 +21,7 @@
   background: #fff;
 }
 .section__title-sub .container {
-  padding: 120px 15px;
+  padding: 120px 15px 60px;
   display: flex;
 }
 .section__title-sub .container .container__span {
@@ -44,4 +44,31 @@
 .section__title-sub .container .container__text-title {
   max-width: 754px;
   width: 100%;
+}
+
+.swiper-wrapper-size-1 {
+  height: 522px !important;
+}
+
+.swiper-slide {
+  max-width: 920px !important;
+  width: 100%;
+}
+
+.img__slider-terra {
+  max-width: 920px;
+  width: 100%;
+}
+
+.section__text .container {
+  padding-bottom: 60px;
+}
+.section__text .container h2 {
+  padding-bottom: 24px;
+}
+.section__text .container .p-reg {
+  padding-bottom: 24px;
+}
+.section__text .container .p-reg:last-child {
+  padding-bottom: 0;
 }/*# sourceMappingURL=terra.css.map */
