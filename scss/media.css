@@ -377,4 +377,42 @@
     font-size: 24px;
     line-height: 32px;
   }
+}
+@media (max-width: 768px) {
+  .container__baner-photo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img__uber {
+    height: 70% !important;
+    width: 70% !important;
+    margin-bottom: 30px;
+  }
+  .img__uber:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 420px) {
+  .button404 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 990px) {
+  .section__impressum .container {
+    padding: 0;
+  }
+  .section__impressum .container h1 {
+    padding-left: 15px;
+  }
+  .section__impressum .container .container__info {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .container__info-item {
+    max-width: none !important;
+    margin-right: 0;
+    margin-bottom: 60px;
+    padding: 40px 34px 40px 15px;
+  }
 }/*# sourceMappingURL=media.css.map */
