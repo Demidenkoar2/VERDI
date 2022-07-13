@@ -538,5 +538,60 @@
         }
     }
 }
-
 // ======== PAGE 3 END ==========
+@media (max-width: 768px) { 
+    .container__baner-photo  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img__uber {
+        height: 70% !important;
+        width: 70% !important;
+
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+// =========== UBER US ==========
+@media (max-width: 420px) {
+    .button404 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+// ============== 404 ===============
+
+
+
+
+// ============== Impressum ===========
+@media (max-width: 990px) {
+
+    .section__impressum  {
+        .container {
+            padding: 0;
+            h1 {
+                padding-left: 15px;
+            }
+        }
+    }
+    .section__impressum .container .container__info  {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .container__info-item {
+        max-width: none !important;
+        margin-right: 0;
+        margin-bottom: 60px;
+        padding: 40px 34px 40px 15px;
+    }
+}
+
+// ============= Impressum ===========

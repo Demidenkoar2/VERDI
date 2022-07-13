@@ -1,0 +1,43 @@
+.uberus {
+  background-image: url(../images/uberuns/TerraVistaBalkon.jpg) !important;
+}
+
+.section {
+  margin: 60px 0;
+}
+.section:first-child {
+  margin-top: 0px;
+}
+
+.section__text .p-reg {
+  max-width: 754px;
+  width: 100%;
+  padding-bottom: 24px;
+}
+.section__text .p-reg:last-child {
+  padding-bottom: 0;
+}
+
+.section__aboutus .container h2 {
+  padding-bottom: 56px;
+}
+.section__aboutus .container .container__baner-photo {
+  display: flex;
+  justify-content: space-between;
+}
+.section__aboutus .container .container__baner-photo .img__uber {
+  height: 33%;
+  width: 33%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section__aboutus .container .container__baner-photo .img__uber:nth-child(1) {
+  background-image: url(../images/uberuns/1.png);
+}
+.section__aboutus .container .container__baner-photo .img__uber:nth-child(2) {
+  background-image: url(../images/uberuns/2.png);
+}
+.section__aboutus .container .container__baner-photo .img__uber:nth-child(3) {
+  background-image: url(../images/uberuns/3.png);
+}/*# sourceMappingURL=uberuns.css.map */

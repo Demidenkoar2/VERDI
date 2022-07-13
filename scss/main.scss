@@ -3,7 +3,7 @@ $color-green: #129E3D;
 $color-grey: #D3D3D3;
 $color-white: #F2F2F2;
 
-$backgroundg-gradient: (164.8deg, #467053 6.78%, #93BDA0 91.84%);
+$backgroundg-gradient: linear-gradient(164.8deg, #467053 6.78%, #93BDA0 91.84%);
 
 @font-face {
     font-family: 'DM Serif Display', serif;
@@ -77,6 +77,11 @@ body {
 .superlead  {
     font-size: 34px;
     line-height: 44px;
+}
+
+.navigator {
+    font-size: 18px;
+    line-height: 26px;
 }
 
 // ===== HEADER =====
@@ -766,5 +771,221 @@ body {
     background-color: #000;
     fill: #fff;
 }
-
 //  ========== FO0TER  END =======
+
+
+// =-====== 404 ========
+.page404 {
+    .dash__line {
+        background: #000;
+    }
+}
+.a__header-link-color {
+    color: #000;
+}
+
+.section__404 {
+    padding: 254px 0 0 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #129E3D;
+            padding-bottom: 40px;
+        }
+
+        span {
+            padding-bottom: 16px;
+        }
+
+        .navigator  {
+            padding-bottom: 40px;
+            opacity: 0.5;
+            max-width: 623px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .button404 {
+            max-width: 320px;
+            width: 100%;
+            height: 80px;
+            border: transparent;
+            color: #fff;
+            background: #129E3D;
+            font-size: 20px;
+            line-height: 27px;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
+
+// ====== 404 =======
+
+
+// ========= Section__Impressum ==========
+.section__impressum {
+    padding: 254px 0 0 0;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            padding-bottom: 56px;
+        }
+
+        .container__info {
+            max-width: 1146px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .container__info-item {
+                height: 538px !important;
+                max-width: 533px;
+                width: 100%;
+                background: linear-gradient(164.8deg, #467053 6.78%, #93BDA0 91.84%);
+            
+            }
+        
+        }
+    }
+}
+
+.container__info-item {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-right: 80px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    padding: 40px 34px 40px 40px;
+
+    h2 {
+        padding-bottom: 24px;
+    }
+}
+
+.container__info-col {
+    display: flex;
+    
+    .container__info-left {
+        max-width: 185;
+        width: 100%;
+        height: 392px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container__info-right {
+        max-width: 253px;
+        width: 100%;
+        height: 392px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .span__left {
+        
+        height: 79px !important;
+    }
+
+    .span__right {
+        height: 79px !important;
+    }
+}
+// ========= Section__Impressum END ==========
+
+// ========= SECTION Datenschutzerklarung ============
+
+.section__datenschutzerklarung {
+    padding-top: 254px;
+
+    .p-reg {
+        color: #808080;
+        max-width: 950px;
+        width: 100%;
+    }
+
+
+    .container {
+
+        .container__titel {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            width: 100%;
+
+            h1 {
+                padding-bottom: 40px;
+            }
+
+            p {
+                padding-bottom: 16px;
+            }
+
+
+        }
+
+        .container-mail {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+
+
+            .span__email {
+                color: #129E3D !important;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        .container__title-desc {
+
+            padding-bottom: 40px;
+
+            h2 {
+                padding-bottom: 16px;
+            }
+
+            p {
+                padding-bottom: 16px;
+            }
+
+
+            li {
+                padding-bottom: 16px;
+
+                &::before {
+                    content: url(../images/dot.png);
+                    opacity: 1!important;
+                    padding-right: 24px;
+                
+                }
+            }
+
+            
+            a {
+                color: #129E3D;
+            }
+        }
+    }
+}
+
+// ========= SECTION Datenschutzerklarung END============
