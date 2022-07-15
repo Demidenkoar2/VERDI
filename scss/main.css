@@ -150,7 +150,7 @@ body {
   position: relative;
   cursor: pointer;
   width: 40px;
-  height: 31px;
+  height: 32px;
   background: transparent;
   border: 1px solid transparent;
 }
@@ -850,4 +850,158 @@ body {
 }
 .section__datenschutzerklarung .container .container__title-desc a {
   color: #129E3D;
+}
+
+.section__kontakt {
+  background: url(../images/kontakt/hero-back\ .jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.section__map-form {
+  display: flex;
+}
+.section__map-form .container__info-map {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.section__map-form .container__info-map .container__info {
+  background: linear-gradient(164.8deg, #467053 6.78%, #93BDA0 91.84%);
+  color: #F2F2F2;
+  height: 298px;
+}
+.section__map-form .container__info-map .container__info h2 {
+  padding: 80px 0 24px 15px;
+}
+.section__map-form .container__info-map .container__info .info {
+  display: flex;
+  padding-left: 15px;
+}
+.section__map-form .container__info-map .container__info .info .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 72px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 32px;
+  opacity: 0.5;
+}
+.section__map-form .container__info-map .container__info .info .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 72px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.section__map-form .container__info-map .container__map .map {
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative;
+}
+.section__map-form .container__form {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 15px 0 120px;
+}
+.section__map-form .container__form .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  width: 100%;
+}
+.section__map-form .container__form .form input {
+  outline: none;
+  border: none;
+  height: 79px;
+  max-width: 460px;
+  width: 100%;
+  padding: 40px 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  opacity: 0.5;
+  background: transparent !important;
+}
+.section__map-form .container__form .form .input__trans:focus::-moz-placeholder {
+  transform: translateX(10px);
+  opacity: 0;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.section__map-form .container__form .form .input__trans:focus:-ms-input-placeholder {
+  transform: translateX(10px);
+  opacity: 0;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.section__map-form .container__form .form .input__trans:focus::placeholder {
+  transform: translateX(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.section__map-form .container__form .form .error::-moz-placeholder {
+  color: #721010 !important;
+}
+.section__map-form .container__form .form .error:-ms-input-placeholder {
+  color: #721010 !important;
+}
+.section__map-form .container__form .form .error::placeholder {
+  color: #721010 !important;
+}
+.section__map-form .container__form .form .error {
+  border-bottom: 1px solid rgb(255, 0, 0) !important;
+}
+.section__map-form .container__form .form textarea {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  max-height: 143px;
+  min-height: 143px;
+  opacity: 0.5;
+  max-width: 460px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  overflow-x: hidden;
+}
+.section__map-form .container__form .form .desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.5;
+  padding-bottom: 24px;
+}
+.section__map-form .container__form .form .border-active:focus {
+  transition: all 0.3s;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.section__map-form .container__form .form .btn__form {
+  text-align: center;
+  height: 80px;
+  max-width: 460px;
+  width: 100%;
+  cursor: pointer;
+  border: transparent;
+  font-size: 20px;
+  line-height: 20px;
+  color: #F2F2F2;
+  background: #129E3D;
+  transition: all 0.3s;
+}
+.section__map-form .container__form .form .btn__form:hover {
+  background: #000000;
+}
+
+.kontakt footer {
+  height: 0;
+}
+.kontakt footer .container__footer {
+  padding: 0 15px;
+  height: 420px;
+}
+.kontakt footer .copy-pading {
+  margin-top: 0px;
 }/*# sourceMappingURL=main.css.map */

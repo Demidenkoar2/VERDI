@@ -29,14 +29,13 @@ function btnHeader(hoverElement, screenWight) {
         if(screenWight <= 900 && scrollPosition == 0) {
             body.classList.toggle('no-scroll')
             headerParent.classList.toggle('mobile-menu-show')
-            // logoBlack.classList.add('logo-hiden');
-            // logoWhite.classList.toggle('logo-hiden')
             hoverElement.classList.toggle('container__hrader-vh');
         }
     });
 }
 btnHeader(headerChangeColor, valueOfScreenWidth());
 // ======== HEADER BTN MENU END
+
 
 // =================== Sroll Top
 
