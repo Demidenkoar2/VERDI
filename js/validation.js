@@ -5,9 +5,6 @@ const inputLastName = document.getElementById('second-name')
 const inputEmail = document.getElementById('email');
 const inputPhone = document.getElementById('phone');
  
-// let x = 'String Number'
-// x = x.toLowerCase()
-// console.log(x)
 
 
 function validEmail(email) {
@@ -15,13 +12,10 @@ function validEmail(email) {
     return regularExpression.test(String(email).toLowerCase());
 }
 
-function validPhone(phone) {
-    // ru
-    // let regularExpression = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/
-    let regularExpression = /^[0-9]|\. |,|:*$/
-    // ru
-    return regularExpression.test(String(phone).toString());
-}
+// function validPhone(phone) {
+//     let regularExpression = /^[0-9]|\. |,|:*$/
+//     return regularExpression.test(String(phone).toString());
+// }
     
 form.onsubmit = function() {
     let emailVal = inputEmail.value;
@@ -46,21 +40,21 @@ form.onsubmit = function() {
 
 
     // ????
-    if (nameVal > 15) {
-        inputName.classList.add('error');
-        console.log('Long name')
-        return false
-    } else {
-        inputName.classList.remove('error')
-    }
+    // if (nameVal > 15) {
+    //     inputName.classList.add('error');
+    //     console.log('Long name')
+    //     return false
+    // } else {
+    //     inputName.classList.remove('error')
+    // }
 
-    if (lastNameVal > 20) {
-        inputLastName.classList.add('error');
-        console.log('Long name')
-        return false
-    } else {
-        inputLastName.classList.remove('error')
-    }
+    // if (lastNameVal > 20) {
+    //     inputLastName.classList.add('error');
+    //     console.log('Long name')
+    //     return false
+    // } else {
+    //     inputLastName.classList.remove('error')
+    // }
     // ?????
 
 
@@ -73,13 +67,14 @@ form.onsubmit = function() {
         inputEmail.classList.remove('error');
     }
 
-    if(!validPhone(phoneVal)) {
-        console.log('phone is not valid');
-        console.log(phoneVal);
-        inputPhone.classList.add('error')
-    } else {
-        inputPhone.classList.remove('error')
-    }
+    // if(!validPhone(phoneVal)) {
+    //     console.log('phone is not valid');
+    //     console.log(phoneVal);
+    //     inputPhone.classList.add('error')
+    //     return false
+    // } else {
+    //     inputPhone.classList.remove('error')
+    // }
 
-    return false
+    // return false
 }
