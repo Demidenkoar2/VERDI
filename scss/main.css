@@ -738,15 +738,167 @@ body {
   background: #000;
 }
 
+.main__referenzen .section__referenzen {
+  width: 100%;
+  background-image: url(../images/referenzen/hero-back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  align-items: flex-end;
+}
+.main__referenzen .section__referenzen::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 48.18%, rgba(0, 0, 0, 0) 50.92%, rgba(0, 0, 0, 0.5) 100%);
+}
+.main__referenzen .section__referenzen .container__title {
+  padding-bottom: 120px;
+}
+.main__referenzen .section__referenzen .container__title h1 {
+  color: #fff;
+}
+.main__referenzen .container__title-sub {
+  background: #fff;
+}
+.main__referenzen .container__title-sub .container__title-sub {
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+.main__referenzen .container__title-sub .container__title-sub p {
+  max-width: 836px;
+  width: 100%;
+}
+.main__referenzen .section__baner-wrap .container__baner-title {
+  background-image: url(../images/referenzen/terra-cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+.main__referenzen .link__baner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 0 15px 56px;
+  position: relative;
+  z-index: 5;
+  opacity: 1;
+  transition: all 1s;
+}
+.main__referenzen .link__baner:hover:before {
+  min-width: 100%;
+  min-height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(160.84deg, #252217 11.93%, #625C47 89.61%);
+  opacity: 0.8;
+}
+.main__referenzen .link__baner .container__baner-positon {
+  padding-left: 56px;
+}
+.main__referenzen .link__baner .container__baner-positon h2 {
+  padding-bottom: 16px;
+}
+.main__referenzen .container__banerlil-items {
+  display: flex;
+  margin-bottom: 10px;
+}
+.main__referenzen .container__banerlil-items .container__baner-lil {
+  max-width: 50%;
+  width: 100%;
+  height: 500px;
+}
+.main__referenzen .container__banerlil-items .container__baner-lil:nth-child(1) {
+  background-image: url(../images/referenzen/prima-cover.png);
+}
+.main__referenzen .container__banerlil-items .container__baner-lil:nth-child(2) {
+  background-image: url(../images/referenzen/terra-cover-4.jpg);
+}
+.main__referenzen .container__banerlil-items .container__baner-lil:first-child {
+  margin-right: 5px;
+}
+.main__referenzen .container__banerlil-items .container__baner-lil:last-child {
+  margin-left: 5px;
+}
+.main__referenzen .container__banerlil-items .container__baner-lil-2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__referenzen .container__banerlil-items .container__baner-lil-2:nth-child(1) {
+  background-image: url(../images/referenzen/terra-cover-3.jpg);
+}
+.main__referenzen .container__banerlil-items .container__baner-lil-2:nth-child(2) {
+  background-image: url(../images/referenzen/terra-cover-2.jpg);
+}
+
+.main__uberus .section__uberus {
+  background-image: url(../images/uberuns/TerraVistaBalkon.jpg) !important;
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.main__uberus .section__uberus .container__title {
+  padding-bottom: 120px;
+}
+.main__uberus .section__uberus .container__title h1 {
+  color: #fff;
+}
+.main__uberus .section {
+  margin: 60px 0;
+}
+.main__uberus .section:first-child {
+  margin-top: 0px;
+}
+.main__uberus .section__text .p-reg {
+  max-width: 754px;
+  width: 100%;
+  padding-bottom: 24px;
+}
+.main__uberus .section__text .p-reg:last-child {
+  padding-bottom: 0;
+}
+.main__uberus .section__aboutus .container h2 {
+  padding-bottom: 56px;
+}
+.main__uberus .section__aboutus .container .container__baner-photo {
+  display: flex;
+  justify-content: space-between;
+}
+.main__uberus .section__aboutus .container .container__baner-photo .img__uber {
+  height: 33%;
+  width: 33%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main__uberus .section__aboutus .container .container__baner-photo .img__uber:nth-child(1) {
+  background-image: url(../images/uberuns/1.png);
+}
+.main__uberus .section__aboutus .container .container__baner-photo .img__uber:nth-child(2) {
+  background-image: url(../images/uberuns/2.png);
+}
+.main__uberus .section__aboutus .container .container__baner-photo .img__uber:nth-child(3) {
+  background-image: url(../images/uberuns/3.png);
+}
+
 .section__impressum {
   padding: 254px 0 0 0;
 }
 .section__impressum .container {
   display: flex;
   flex-direction: column;
-}
-.section__impressum .container h1 {
-  padding-bottom: 56px;
 }
 .section__impressum .container .container__info {
   max-width: 1146px;
@@ -844,7 +996,7 @@ body {
   padding-bottom: 16px;
 }
 .section__datenschutzerklarung .container .container__title-desc li::before {
-  content: url(../images/dot.png);
+  content: url(../images/datenschutz/dot.png);
   opacity: 1 !important;
   padding-right: 24px;
 }
@@ -852,11 +1004,109 @@ body {
   color: #129E3D;
 }
 
+.main__kaufobjekte .section__title {
+  width: 100%;
+  background-image: url(../images/kaufobjekte/hero-back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  align-items: flex-end;
+}
+.main__kaufobjekte .section__title::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 48.18%, rgba(0, 0, 0, 0) 50.92%, rgba(0, 0, 0, 0.5) 100%);
+}
+.main__kaufobjekte .section__title .container__title {
+  padding-bottom: 120px;
+}
+.main__kaufobjekte .section__title .container__title h1 {
+  color: #fff;
+}
+.main__kaufobjekte .container__title-sub {
+  background: #fff;
+}
+.main__kaufobjekte .container__title-sub .container__title-sub {
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+.main__kaufobjekte .container__title-sub .container__title-sub p {
+  max-width: 836px;
+  width: 100%;
+}
+.main__kaufobjekte .section__baner-wrap .container__baner-title {
+  background-image: url(../images/kaufobjekte/terra-title.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+.main__kaufobjekte .link__baner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 0 15px 56px;
+  position: relative;
+  z-index: 5;
+  opacity: 1;
+  transition: all 1s;
+}
+.main__kaufobjekte .link__baner:hover:before {
+  min-width: 100%;
+  min-height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(160.84deg, #3b7a8a 11.93%, #151130 89.61%);
+  opacity: 0.8;
+}
+.main__kaufobjekte .link__baner .container__baner-positon {
+  padding-left: 56px;
+}
+.main__kaufobjekte .link__baner .container__baner-positon h2 {
+  padding-bottom: 16px;
+}
+.main__kaufobjekte .container__banerlil-items {
+  display: flex;
+  margin-bottom: 10px;
+}
+.main__kaufobjekte .container__banerlil-items .container__baner-lil {
+  max-width: 50%;
+  width: 100%;
+  height: 500px;
+}
+.main__kaufobjekte .container__banerlil-items .container__baner-lil:nth-child(1) {
+  background-image: url(../images/kaufobjekte/terra-cover-1.jpg);
+}
+.main__kaufobjekte .container__banerlil-items .container__baner-lil:nth-child(2) {
+  background-image: url(../images/kaufobjekte/terra-cover-2.jpg);
+}
+.main__kaufobjekte .container__banerlil-items .container__baner-lil:first-child {
+  margin-right: 5px;
+}
+.main__kaufobjekte .container__banerlil-items .container__baner-lil:last-child {
+  margin-left: 5px;
+}
+
 .section__kontakt {
+  height: 580px;
   background: url(../images/kontakt/hero-back\ .jpg) !important;
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  display: flex;
+  align-items: flex-end;
+}
+.section__kontakt h1 {
+  color: #fff;
+  padding-bottom: 120px;
 }
 
 .section__map-form {
@@ -942,15 +1192,6 @@ body {
   opacity: 0;
   transition: 0.3s;
 }
-.section__map-form .container__form .form .error::-moz-placeholder {
-  color: #721010 !important;
-}
-.section__map-form .container__form .form .error:-ms-input-placeholder {
-  color: #721010 !important;
-}
-.section__map-form .container__form .form .error::placeholder {
-  color: #721010 !important;
-}
 .section__map-form .container__form .form .error {
   border-bottom: 1px solid rgb(255, 0, 0) !important;
 }
@@ -1004,4 +1245,74 @@ body {
 }
 .kontakt footer .copy-pading {
   margin-top: 0px;
+}
+
+.main__terra .section__terra {
+  background-image: url(../images/terra/tittle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.main__terra .section__terra .container {
+  padding-bottom: 120px;
+  color: #fff;
+}
+.main__terra .section__terra .container h1 {
+  padding-bottom: 24px;
+}
+.main__terra .section__title-sub {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.main__terra .section__title-sub .container {
+  padding: 120px 15px 60px;
+  display: flex;
+}
+.main__terra .section__title-sub .container .container__span {
+  display: flex;
+  flex-direction: column;
+  max-width: 326px;
+  width: 100%;
+  margin-right: 30px;
+}
+.main__terra .section__title-sub .container .container__span .link__span-title {
+  color: #000;
+  transition: color 0.3s;
+}
+.main__terra .section__title-sub .container .container__span .link__span-title:hover {
+  color: #129E3D;
+}
+.main__terra .section__title-sub .container .container__span .link__span-title:nth-child(2) {
+  padding-bottom: 39px;
+}
+.main__terra .section__title-sub .container .container__text-title {
+  max-width: 754px;
+  width: 100%;
+}
+.main__terra .swiper-wrapper-size-1 {
+  height: 522px !important;
+}
+.main__terra .swiper-slide {
+  max-width: 920px !important;
+  width: 100%;
+}
+.main__terra .img__slider-terra {
+  max-width: 920px;
+  width: 100%;
+}
+.main__terra .section__text .container {
+  padding-bottom: 60px;
+}
+.main__terra .section__text .container h2 {
+  padding-bottom: 24px;
+}
+.main__terra .section__text .container .p-reg {
+  padding-bottom: 24px;
+}
+.main__terra .section__text .container .p-reg:last-child {
+  padding-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
