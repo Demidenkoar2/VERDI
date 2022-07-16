@@ -595,3 +595,87 @@
 }
 
 // ============= Impressum ===========
+
+// ============ KONTACKT ============
+
+@media (max-width: 990px) {
+
+    .section__map-form {
+        display: flex;
+        flex-direction: column;
+
+        .container__info-map {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .container__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .block {
+                    text-align: left;
+
+                    h2 {
+                        padding: 0 0 24px 0px;
+                    }
+    
+                    .info {
+                        padding: 0
+                    }
+                }
+            }
+
+        }
+
+        .container__form {
+            padding: 80px 15px 0 30px;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                max-width: 860px;
+                width: 100%;
+                // padding-right: 15px;
+
+                span {
+                    width: 100% !important;
+                    max-width: 800px !important;
+                }
+
+                input {
+                    height: 79px;
+                    max-width: 800px !important;
+                    width: 100%;
+                    padding: 40px 0 15px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                    opacity: 0.5;
+                    background: transparent !important; 
+                    position: relative;
+    
+                }
+
+                textarea {
+                    max-width: 800px;
+                }
+
+                .btn__form {
+                    max-width: 800px;
+                }
+            }
+
+        }
+
+    }
+    .kontakt {
+        footer {
+            border: transparent;
+        }
+    }
+}
+
+
+
+// ============ KONTACKT+

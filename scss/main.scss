@@ -1183,7 +1183,6 @@ body {
                 padding-bottom: 16px;
 
                 &::before {
-                    // content: url(../images/dot.png);
                     content: url(../images/datenschutz/dot.png);
                     opacity: 1!important;
                     padding-right: 24px;
@@ -1406,7 +1405,41 @@ body {
             flex-direction: column;
             max-width: 460px;
             width: 100%;
-           
+
+            .input__number { 
+                -moz-appearance: textfield;
+              }
+              .input__number::-webkit-inner-spin-button { 
+                display: none;
+            }
+
+            .span-input {
+                position: relative;
+
+                // &::before {
+                //     content: 'error' !important;
+                //     color: rgba(255, 0, 0, 0.5);
+                //     position: absolute;
+                //     bottom: -20px !important;
+                //     right: 0;
+                // }
+            }
+
+            .span-error {
+                display: none !important;
+                transition: all 0.3s;
+                text-align: right;
+                width: 100%;
+                height: 30px;
+                // text-align: right;
+                color: rgba(229, 8, 8, 0.5);
+            }
+
+            .span-error-active {
+                display: block !important;
+                transition: all 0.3s;
+            }
+
 
             input {
                 outline: none; 
@@ -1418,6 +1451,7 @@ body {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.15);
                 opacity: 0.5;
                 background: transparent !important; 
+                position: relative;
 
             }
 
@@ -1429,18 +1463,18 @@ body {
                   }
             }
 
-            .error::placeholder {
-                // color: #721010 !important;
-                // border: #000 !important;
-            }
+            // .error::placeholder {
+            //     // color: #721010 !important;
+            //     // border: #000 !important;
+            // }
 
             .error {
-                border-bottom: 1px solid rgba(255, 0, 0, 5) !important;
+                border-bottom: 1px solid rgba(229, 8, 8, 0.5) !important;
             }
 
             textarea {
                 padding-top: 40px;
-                margin-bottom: 40px;
+                // margin-bottom: 40px;
                 max-height: 143px;
                 min-height: 143px;
                 opacity: 0.5;
@@ -1458,6 +1492,7 @@ body {
                 line-height: 24px;
                 color: #000000;
                 opacity: 0.5;
+                padding-top: 40px;
                 padding-bottom: 24px;
             }
 
@@ -1495,9 +1530,9 @@ body {
             padding: 0 15px;
             height: 420px;
 
-            .container__nav-footer {
+            // .container__nav-footer {
                 
-            }
+            // }
         }
 
         .copy-pading {

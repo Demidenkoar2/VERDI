@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="../scss/media.css">
-    <link rel="stylesheet" href="../scss/referenzen.css">
+    <!-- <link rel="stylesheet" href="../scss/referenzen.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -58,34 +58,36 @@
                 </h1>
             </div>
         </section>
-
         <section class="section section__map-form">
             <div class="container__info-map">
                 <div class="container__info" id="container__info-padding">
-                    <h2 class="h2">
-                        Verdi Immobilien AG
-                    </h2>
-                    <div class="info">
-                        <div class="left">
-                            <span>
-                                Adresse
-                            </span>
-                            <span>
-                                E-Mail
-                            </span>
-                        </div>
-                        <div class="right">
-                            <span>
-                                Thunstrasse 9 3005 Bern
-                            </span>
-                            <span>
-                                info@verdiimmobilien.ch
-                            </span>
+                    <div class="block">
+                        <h2 class="h2">
+                            Verdi Immobilien AG
+                        </h2>
+                        <div class="info">
+                            <div class="left">
+                                <span>
+                                    Adresse
+                                </span>
+                                <span>
+                                    E-Mail
+                                </span>
+                            </div>
+                            <div class="right">
+                                <span>
+                                    Thunstrasse 9 3005 Bern
+                                </span>
+                                <span>
+                                    info@verdiimmobilien.ch
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.9339482121636!2d7.449118415561064!3d46.94333727914631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39c542c28067%3A0x31ef094f0ed21c54!2sVerdi%20Immobilien%20AG!5e0!3m2!1sru!2sua!4v1657801356077!5m2!1sru!2sua" width="750" height="614" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.9339482121636!2d7.449118415561064!3d46.94333727914631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39c542c28067%3A0x31ef094f0ed21c54!2sVerdi%20Immobilien%20AG!5e0!3m2!1sru!2sua!4v1657801356077!5m2!1sru!2sua" width="750" height="614" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
+                    </iframe>
                 </div>
             </div>
             <div class="container__form">
@@ -93,20 +95,34 @@
                     Kontaktieren Sie uns
                 </h2>
                 <form action="#" method="#" class="form" id="form">
-                    <span>
-                        <input class="border-active input__trans input__elem" type="text" name="Vorname" id="name"  placeholder="Vorname*" style="background: transparent;">
+                    <span class="span-input">
+                        <input class="border-active input__trans input__elem" type="text" name="Vorname" id="name"  placeholder="Vorname*" 
+                        autocomplete="off">
+                        <span class="span-error">
+                            error
+                        </span>
+                    </span>
+                    <span class="span-input">
+                        <input class="border-active input__trans input__elem" type="text" name="Nachname" id="second-name" placeholder="Nachname*" autocomplete="off">
+                        <span class="span-error">
+                            error
+                        </span>
+                    </span>
+                    <span class="span-input">
+                        <input class="border-active input__trans input__elem" type="text" name="E-Mail-Adresse" id="email" placeholder="E-Mail-Adresse*" autocomplete="off">
+                        <span class="span-error">
+                            error
+                        </span>
                     </span>
                     <span>
-                        <input class="border-active input__trans input__elem" type="text" name="Nachname" id="second-name" placeholder="Nachname*">
+                        <input class="border-active input__trans input__number"  aria-invalid="false" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="Telefon" id="phone" placeholder="Telefon" autocomplete="off">
                     </span>
-                    <span>
-                        <input class="border-active input__trans input__elem" type="text" name="E-Mail-Adresse" id="email" placeholder="E-Mail-Adresse*">
+                    <span> 
+                        <textarea class="border-active input__trans input__elem" name="nachricht" id="textarea" cols="30" rows="10" placeholder="Nachricht*" autocomplete="off"></textarea>
+                        <span class="span-error">
+                            error
+                        </span>
                     </span>
-                    <span>
-                        <input class="border-active input__trans" type="text" name="Telefon" id="phone" placeholder="Telefon">
-                    </span>
-                    <!-- input__elem input__phone -->
-                    <textarea class="border-active input__trans input__elem" name="nachricht" id="textarea" cols="30" rows="10" placeholder="Nachricht*"></textarea>
                     <span class="desc">*Pflichtfelder</span>
                     <button type="submit" class="btn__form">
                         Kontaktieren
