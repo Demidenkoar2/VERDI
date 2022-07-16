@@ -3,10 +3,10 @@ const formInput = document.querySelectorAll('.input__elem');
 const inputName = document.getElementById('name');
 const inputLastName = document.getElementById('second-name')
 const inputEmail = document.getElementById('email');
-const inputPhone = document.getElementById('phone');
+const inputPhone = document.getElementById('phone'); 
+
+const spanElements = document.querySelectorAll('.span-error')
  
-
-
 function validEmail(email) {
     let regularExpression = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regularExpression.test(String(email).toLowerCase());
@@ -19,25 +19,52 @@ function validEmail(email) {
     
 form.onsubmit = function() {
     let emailVal = inputEmail.value;
-    let nameVal = inputName.value.length;
-    let lastNameVal = inputLastName.value.length
-    console.log(nameVal, lastNameVal)
-    let phoneVal = inputPhone.value;
+    // let nameVal = inputName.value.length;
+    // let lastNameVal = inputLastName.value.length
+    // console.log(nameVal, lastNameVal)
+    // let phoneVal = inputPhone.value;
     let emptyInputs = Array.from(formInput).filter(input => input.value === '')
 
-    formInput.forEach(function(input) {
-        if(input.value === '' || input.value === ' ') {
-            input.classList.add('error')
+
+    formInput.forEach(function(input, i) {
+        if(input.value === '') {
+            // console.log(input.value);
+            input.classList.add('error');
+            // console.log(formInput[i])
+            // console.log(spanElements);
+            if(formInput[i].classList.contains('error')) {
+                spanElements[i].classList.add('span-error-active')
+            }
         } else {
-            input.classList.remove('error')
+            input.classList.remove('error')  
+            if(!formInput[i].classList.contains('error')) {
+                spanElements[i].classList.remove('span-error-active')
+            }
         }
+
     });
+
 
     if (emptyInputs.length !== 0) {
         console.log('inputs not filled');
         return false
     }
 
+    // console.log(spanElements[3])
+    // spanElements[3].classList.add('span-error-active')
+
+    if (!validEmail(emailVal)) {
+        console.log('email is not valid');
+        // console.log(emailVal, spanElements[3]);
+        inputEmail.classList.add('error');
+        spanElements[2].classList.add('span-error-active')
+        return false
+    } else {
+        inputEmail.classList.remove('error');
+        spanElements[2].classList.remove('span-error-active')
+    }
+
+    
 
     // ????
     // if (nameVal > 15) {
@@ -56,16 +83,6 @@ form.onsubmit = function() {
     //     inputLastName.classList.remove('error')
     // }
     // ?????
-
-
-    if (!validEmail(emailVal)) {
-        console.log('email is not valid');
-        console.log(emailVal);
-        inputEmail.classList.add('error');
-        return false
-    } else {
-        inputEmail.classList.remove('error');
-    }
 
     // if(!validPhone(phoneVal)) {
     //     console.log('phone is not valid');
