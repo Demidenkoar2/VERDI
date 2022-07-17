@@ -3,9 +3,6 @@ const headerLinks = document.querySelectorAll('.a__header-link');
 
 const logoHeader = document.querySelector('.container__logo');
 
-const logoBlack = document.querySelector('.logo-black');
-const logoWhite = document.querySelector('.logo-white');
-
 const body = document.querySelector('.body');
 
 // ======= SCREEN WIGHT ======
@@ -35,6 +32,34 @@ function btnHeader(hoverElement, screenWight) {
 }
 btnHeader(headerChangeColor, valueOfScreenWidth());
 // ======== HEADER BTN MENU END
+
+// ========= HEADER BG POSITION AND HIDEN =======================
+let lastScrollTop = 0;
+const headerElem = document.querySelector('.header');
+const dash = document.querySelectorAll('.dash__line');
+const menuHaderNav = document.querySelector('.header__menu_hiden');
+window.addEventListener("scroll", function() {
+
+    let scrollPositionY = window.pageYOffset || document.documentElement.scrollTop; 
+    let screenWight = document.documentElement.clientWidth;
+
+    if (scrollPositionY > lastScrollTop && scrollPositionY > 0 && screenWight <= 900) {
+        headerElem.classList.add('hover-bg', 'heder__trans', 'header-bg');
+        dash.forEach((el)=> {
+            el.classList.add('dash__line-bg');
+        });
+    } else if (scrollPositionY == 0  && screenWight <= 900) {
+        headerElem.classList.remove('header-bg');
+        dash.forEach((el)=> {
+            el.classList.remove('dash__line-bg');
+        });
+    } else if (screenWight < 900 && scrollPositionY > 0) {
+        headerElem.classList.remove('hover-bg', 'heder__trans');
+    }
+    lastScrollTop = scrollPositionY <= 0 ? 0 : scrollPositionY; 
+    
+}, false);
+// ========= HEADER BG POSITION AND HIDEN END
 
 
 // =================== Sroll Top

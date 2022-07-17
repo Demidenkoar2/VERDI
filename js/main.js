@@ -17,7 +17,7 @@ let valueOfScreenWidth = function checkPosition() {
 
 //  ======= HEADER HOVER ======
 function hoverHeader(hoverElement, black, white, linkElements, screenWight = valueOfScreenWidth()) {
-    if (screenWight > 768) {
+    if (screenWight > 900) {
         hoverElement.addEventListener('mouseover', () => {
             hoverElement.classList.add('hover-bg');
             black.classList.remove('logo-hiden');
@@ -68,7 +68,7 @@ function btnHeader(hoverElement, screenWight) {
             logoBlack.classList.toggle('logo-hiden');
             logoWhite.classList.toggle('logo-hiden')
             hoverElement.classList.toggle('container__hrader-vh');
-        }
+        } 
     });
 }
 btnHeader(headerChangeColor, valueOfScreenWidth());
@@ -307,7 +307,7 @@ function scrollTop(element) {
 
 // =================== Sroll Top End
 
-
+// PADDING POSITION //
 function paddingElementRight() {
         const blockBorder = document.getElementById('element-padding').offsetLeft;
         const swiperBlockFirst = document.querySelector('.swiperNumber0');
@@ -331,28 +331,9 @@ function paddingElementNone() {
         }else if(valueOfScreenWidth() < 1200) {
             paddingElementNone()
         }
-
-        // console.log(valueOfScreenWidth())
     });
-
-
-    // if(screenWight > 900) {
-    //     window.addEventListener('resize', function() {
-    //         console.log(screenWight)
-    //         paddingElementRight() 
-            
-    //     });
-    // } else if (screenWight < 900) {
-    //     window.addEventListener('resize', function() {
-    //         console.log(screenWight)
-    //         paddingElementNone() 
-            
-    //     });
-    // }
 })();
 
-
-// !!!!!!!!!!!!!!!!!!
 (function load(screenWight = valueOfScreenWidth()) {
     if (screenWight >= 1200) {
         window.addEventListener('load', () => {
@@ -363,6 +344,5 @@ function paddingElementNone() {
     }
 })();
 
-// !!!!!!!!!!!!!!!!!!!
-
+// ===== PADDING POSITION ======= //
 

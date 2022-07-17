@@ -18,58 +18,52 @@ function validEmail(email) {
 // }
     
 form.onsubmit = function() {
-    let emailVal = inputEmail.value;
+
     // let nameVal = inputName.value.length;
     // let lastNameVal = inputLastName.value.length
     // console.log(nameVal, lastNameVal)
     // let phoneVal = inputPhone.value;
+
+
+    let emailVal = inputEmail.value;
     let emptyInputs = Array.from(formInput).filter(input => input.value === '')
-
-
     formInput.forEach(function(input, i) {
         if(input.value === '') {
-            // console.log(input.value);
             input.classList.add('error');
-            // console.log(formInput[i])
-            // console.log(spanElements);
             if(formInput[i].classList.contains('error')) {
-                spanElements[i].classList.add('span-error-active')
-            }
+                spanElements[i].classList.add('span-error-active');
+            };
         } else {
-            input.classList.remove('error')  
+            input.classList.remove('error')  ;
             if(!formInput[i].classList.contains('error')) {
-                spanElements[i].classList.remove('span-error-active')
-            }
-        }
+                spanElements[i].classList.remove('span-error-active');
+            };
+        };
 
     });
 
 
     if (emptyInputs.length !== 0) {
         console.log('inputs not filled');
-        return false
+        return false;
     }
-
-    // console.log(spanElements[3])
-    // spanElements[3].classList.add('span-error-active')
 
     if (!validEmail(emailVal)) {
-        console.log('email is not valid');
-        // console.log(emailVal, spanElements[3]);
+        // console.log('email is not valid');
         inputEmail.classList.add('error');
-        spanElements[2].classList.add('span-error-active')
-        return false
+        spanElements[2].classList.add('span-error-active');
+        return false;
     } else {
         inputEmail.classList.remove('error');
-        spanElements[2].classList.remove('span-error-active')
-    }
+        spanElements[2].classList.remove('span-error-active');
+    };
 
     
 
     // ????
     // if (nameVal > 15) {
     //     inputName.classList.add('error');
-    //     console.log('Long name')
+    //     console.log(inputName)
     //     return false
     // } else {
     //     inputName.classList.remove('error')
@@ -94,4 +88,4 @@ form.onsubmit = function() {
     // }
 
     // return false
-}
+};
