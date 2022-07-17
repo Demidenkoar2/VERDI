@@ -18,7 +18,7 @@ let valueOfScreenWidth = function checkPosition() {
 
 //  ======= HEADER HOVER ======
 function hoverHeader(hoverElement, black, white, linkElements, screenWight = valueOfScreenWidth()) {
-    if (screenWight > 768) {
+    if (screenWight > 900) {
         hoverElement.addEventListener('mouseover', () => {
             hoverElement.classList.add('hover-bg');
             black.classList.remove('logo-hiden');
@@ -273,23 +273,7 @@ window.addEventListener('resize', function() {
         paddingElementNone()
     }
 
-    // console.log(valueOfScreenWidth())
 });
-
-
-// if(screenWight > 900) {
-//     window.addEventListener('resize', function() {
-//         console.log(screenWight)
-//         paddingElementRight() 
-        
-//     });
-// } else if (screenWight < 900) {
-//     window.addEventListener('resize', function() {
-//         console.log(screenWight)
-//         paddingElementNone() 
-        
-//     });
-// }
 })();
 
 

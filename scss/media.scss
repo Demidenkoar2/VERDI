@@ -49,6 +49,15 @@
 }
 
 @media (max-width: 900px) {
+
+    .mobile-menu-show .logo-white {
+        display: none;
+    }
+
+    .mobile-menu-show .logo-black {
+        display: block;
+    }
+    
     .heder__trans {
         transform: translateY(-240px);
     }
@@ -137,13 +146,6 @@
     //     transform: translateY(-240px);
     // }
     
-    .mobile-menu-show .logo-white {
-        display: none;
-    }
-
-    .mobile-menu-show .logo-black {
-        display: block;
-    }
 
     body {
         zoom: unset;

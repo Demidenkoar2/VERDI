@@ -16,7 +16,7 @@ let valueOfScreenWidth = function checkPosition() {
 };
 
 function hoverHeader(hoverElement, black, white, linkElements, screenWight = valueOfScreenWidth()) {
-    if (screenWight > 768) {
+    if (screenWight > 900) {
         hoverElement.addEventListener('mouseover', () => {
             hoverElement.classList.add('hover-bg');
             black.classList.remove('logo-hiden');
@@ -49,6 +49,8 @@ function hoverHeader(hoverElement, black, white, linkElements, screenWight = val
 hoverHeader(headerChangeColor, logoBlack, logoWhite, headerLinks);
 
 
+// ========= HEADER BG POSITION AND HIDEN =======================
+
 let lastScrollTop = 0;
 const headerElem = document.querySelector('.header');
 const dash = document.querySelectorAll('.dash__line');
@@ -79,6 +81,8 @@ window.addEventListener("scroll", function() {
     lastScrollTop = scrollPositionY <= 0 ? 0 : scrollPositionY; 
     
 }, false);
+
+// ========= HEADER BG POSITION AND HIDEN END
 
 
 function scrollTop(element) {
@@ -130,6 +134,8 @@ function btnHeader(hoverElement, screenWight) {
             logoBlack.classList.toggle('logo-hiden');
             logoWhite.classList.toggle('logo-hiden')
             hoverElement.classList.toggle('container__hrader-vh');
+        } else if (screenWight <= 900 && scrollPosition > 0) {
+            logoWhite.classList.add('logo-hiden')
         }
     });
 }
