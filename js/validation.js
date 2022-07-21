@@ -1,7 +1,7 @@
 const form = document.getElementById('form');
 const formInput = document.querySelectorAll('.input__elem');
 const inputName = document.getElementById('name');
-const inputLastName = document.getElementById('second-name')
+const inputLastName = document.getElementById('second-name');
 const inputEmail = document.getElementById('email');
 const inputPhone = document.getElementById('phone'); 
 
